@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>AULA 4 TABELAS</title>   
+    </head>
+    <body>
+        <table border ="black">
+            <!-- thead é a marcação de cabeçalho -->
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                </tr>
+            </thead>
+            <tfoot> 
+                <tr>
+                    <td colspan="3">ultima atualização em 23/02</td>
+                </tr>
+                <!-- td colspan mescla as linhas -->
+            </tfoot>
+
+            <tr>
+                <td>Toyota</td>
+                <td>Corola</td>
+                <td rowspan="2">2010</td>
+            </tr>
+            <!-- td rowspan mescla as tabelas -->
+            
+            <tr>
+                <td>Toyota</td>
+                <td>Corola</td>
+
+            </tr>
+            <tr>
+                <td>Toyota</td>
+                <td>Corola</td>
+                <td>2020</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
