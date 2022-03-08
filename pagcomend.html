@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>PAGAMENTO</title>
+    </head>
+
+    <body bgcolor="#CED3DA">
+        <div align="center">
+            <h2>INSIRA OS DADOS PARA O PAGAMENTO</h2>
+            <table>
+                <tr>
+                    <td>Nome Completo:</td>
+                    <td><input type="text" name="txtNome" /></td>
+                </tr>
+
+                <tr>
+                    <td>Data de Nascimento</td>
+                    <td><input type="date" name="txtData" /></td>
+                </tr>
+
+                <tr>
+                    <td>CPF:</td>
+                    <td><input type="number" name="txtCpf" /></td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="txtEmail" /></td>
+                </tr>
+
+                <tr>
+                    <td>Telefone:</td>
+                    <td><input type="tel" name="txtTelefone" /></td>
+                </tr>
+            </table>
+
+            <h3>Endereço</h3>
+            <table>
+                <tr>
+                    <td>Rua:</td>
+                    <td><input type="text" name="txtRua" /></td>
+                    <td>Numero:</td>
+                    <td><input type="number" style="width:50px" name="txtNum" /></td>
+                </tr>
+
+                <tr>
+                    <td>UF:</td>
+                    <td><select name="uF">
+                            <option value="uF" selected>Estado</option>
+                            <option value="sãoPaulo">São Paulo</option>
+                            <option value="matoGrossodoSul">Mato Grosso do Sul</option>
+                            <option value="goias">Goias</option>
+                            <option value="pernambuco">Pernambuco</option>
+                        </select></td>
+                    <td>Cidade:</td>
+                    <td><select name="cidade">
+                            <option value="cidade" selected>Cidade</option>
+                            <option value="castilho">Castilho</option>
+                            <option value="três Lagoas">Três Lagoas</option>
+                            <option value="goiania">Goiania</option>
+                            <option value="recife">Recife</option>
+                        </select></td>
+                </tr>
+            </table>
+
+            <h3>Insira a Quantidade de ANA POINTS que deseja </h3>
+            <table>
+
+                <th>
+                    <select name="quantidade">
+                        <option value="valor1" selected>300</option>
+                        <option value="valor2">900</option>
+                        <option value="valor3">1200</option>
+                        <option value="valor3">1800</option>
+                        <option value="valor3">2100</option>
+                        <option value="valor3">2700</option>
+                        <option value="valor3">3000</option>
+                        <option value="valor3">4000</option>
+
+                    </select>
+                </th>
+
+                <th>Points</th>
+            </table>
+
+            <h3>Dados do Cartão </h3>
+            <table>
+                <tr>
+                    <td>Nome do Cartão:</td>
+                    <td><input type="text" name="txtNomeCartao" /></td>
+                    <td>Numero:</td>
+                    <td><input type="number" name="txtNumCartao" /></td>
+                </tr>
+
+                <tr>
+                    <td>Data de Vencimento</td>
+                    <td><input type="date" name="txtDataCartao" /></td>
+                    <td>Codigo de Segurança: </td>
+                    <td><input type="number" style="width:40px" name="txtCodigo"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div align="center">
+            <input type="button" value="Enviar" name="txtBtmEnviar" />
+        </div>
+    </body>
+
+</html>
