@@ -3,7 +3,9 @@
     padding: 0;
     text-align: center;
 }
-
+ /* div{
+     border: 1px solid black;
+ } */
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +32,7 @@ nav{
 
 article{
     background: rgb(241, 239, 240);
-    width: calc(100vw - 230px - 50px);
+    width: calc(100vw - 10px - 230px - 50px);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
