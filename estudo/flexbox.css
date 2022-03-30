@@ -34,9 +34,10 @@ nav{
 
 article{
     background: rgb(241, 239, 240);
-    width:calc(100vw - 200px - 30px);
-    height:300px;
-    align-items: right;
+    width:calc(100vw - 200px);
+    /* height:300px; */
+    /* align-items: right; */
+    display: flex;
 }
 
 .main{
