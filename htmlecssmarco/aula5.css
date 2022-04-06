@@ -5,8 +5,8 @@
         --primary-color: rgb(102, 2, 102);
         --white-color: #fff;
 
-        --primary-color-light: rgda(102, 2, 102, 0.2);
-        --write-color-light: rgda(245, 245, 245, 0.2);
+        --primary-color-light: rgba(102, 2, 102, 0.2);
+        --write-color-light: rgba(211, 205, 205, 0.2);
 }
 
 *{
@@ -54,6 +54,12 @@ nav .menu{
 
 nav .menu li{
     width: 100%;
+    transition: 0.5s;
+}
+
+nav .menu li:hover{
+   background:var(--primary-color-light);
+    
 }
 
 nav .menu li a{

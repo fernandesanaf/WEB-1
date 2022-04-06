@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --bg-color: #f6f6f6;
+    --nav-color: #ffffff;
+    --hover-color: #eefbf2;
+    --search-color:#ececec;
+
+    --div1-color:#5c5574;
+    --div11-color:#796d9d;
+    --div2-color:#00a28a;
+    --div3-color:#4952fd;
+    --div4-color:#ab53db;
+    --div5-color:#ff5b5a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+ /* div{
+     border: 1px solid black;
+ }  */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    background: var(--bg-color);
+
+}
+
+header{
+    height: 75px;
+    background: var(--bg-color);
+    width: 97vw;
+}
+
+body{
+    font-family: Poppins;
+    /* gap: 10px; */
+    display: flex;
+}
+
+.container2{
+    display: flex;
+    border-radius: 10px;
+}
+
+nav{
+    background: var(--nav-color);
+    width: 160px;
+    height: calc (100vh - 75px);
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.box1{
+    display: flex;
+    background: rgb(241, 239, 240);
+    width: calc(100vw - 190px - 10px - 10px - 10px);
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--bg-color);
+}
+
+
+.caixa1{
+    height: 26vh;
+    width: 66vw;
+    background: linear-gradient(90deg, var(--div1-color) 01%, var(--div11-color) 100%);
+    border-radius: 10px;
+}
+
+.quatrocaixas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.caixa2{
+    display: flex;
+    height: 12vh;
+    width: 23vw;
+    background: var(--div2-color);
+    border-radius: 10px;
+}
+
+.caixa3{
+    height: 12vh;
+    width: 23vw;
+    background: var(--div3-color);
+    border-radius: 10px;
+}
+
+.caixa4{
+    height: 12vh;
+    width: 23vw;
+    background: var(--div4-color);
+    border-radius: 10px;
+}
+
+.caixa5{
+    height: 12vh;
+    width: 23vw;
+    background: var(--div5-color);
+    border-radius: 10px;
+}
+
+
+.meio{
+    background: var(--search-color);
+    height: 5vh;
+    display: flex;
+    gap: 10px;
+    width: calc(100vw - 190px - 10px - 10px - 10px);
+    border-radius: 10px;
+}
+
+.meio1{
+    width: calc(80vw - 210px);
+}
+
+.meio2{
+    width: calc(45vw - 210px);
+}
+
+.box2{
+    display: flex;
+    height: 55vh;
+    gap: 10px;
+    width: calc(100vw - 190px - 10px - 10px - 10px);
+}
+
+.table1{
+    width: calc(80vw - 210px);
+}
+
+.table2{
+    width: calc(45vw - 210px);
+}
