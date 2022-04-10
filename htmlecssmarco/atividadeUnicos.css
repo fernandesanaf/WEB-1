@@ -1,147 +1,310 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+/*cores*/
 :root {
     --bg-color: #f6f6f6;
     --nav-color: #ffffff;
-    --hover-color: #eefbf2;
     --search-color:#ececec;
+    --txt-color:#6F6F71;
 
+    /*box1*/
     --div1-color:#5c5574;
     --div11-color:#796d9d;
     --div2-color:#00a28a;
     --div3-color:#4952fd;
     --div4-color:#ab53db;
     --div5-color:#ff5b5a;
+
+    --hover-color: #64C17A;
+    --hover-color-light: #d6f6de;
+    --border-hover:#26c96e;
 }
 
 *{
     margin: 0;
     padding: 0;
-    text-align: center;
-    
+    list-style: none;
+    text-decoration: none;
 }
 
- /* div{
-     border: 1px solid black;
- }  */
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    background: var(--bg-color);
-
-}
-
-header{
-    height: 75px;
-    background: var(--bg-color);
-    width: 97vw;
+div{
+    border: 1px solid black;
 }
 
 body{
-    font-family: Poppins;
-    /* gap: 10px; */
-    display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container2{
+/*tamanho das fontes*/
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 3.3rem;
+    font-weight:400;
+}
+
+h2{
+    font-size: 2.3rem;
+    font-weight:600;
+}
+
+h3{
+    font-size: 1.3rem;
+    color: var(--txt-color);
+}
+
+h4{
+    font-size: 0.8rem;
+    font-weight:600;
+}
+
+/* nav */
+h3:hover{
+    color: var(--hover-color);
+}
+
+.container{
+    height: 100%;
     display: flex;
-    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 nav{
     background: var(--nav-color);
-    width: 160px;
-    height: calc (100vh - 75px);
-    display: flex;
+    width:17rem; 
+    height: 100%;
+    /* display: flex; */
     /* border: 1px solid black; */
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+img{
+    width: 12rem;
+    padding-top: 2rem;
+}
+.menu{
+    display: flex;
+    width: 17rem;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+nav .menu .limenu{
+    width: 15rem;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+nav .menu .limenu:hover{
+   background:var(--hover-color-light);
+    
+}
+
+.amenu{
+    display:flex;
+    align-items:center;
+    color: var(--txt-color);
+    gap: 0.5rem;
+}
+
+.limenu{
+    transition: all .5s;
+    border: 0.5rem solid transparent;
+}
+
+.limenu:hover{
+    border-left: 0.5rem solid var(--border-hover);
+}
+
+nav .menu .limenu .amenu .imenu:rover{
+    background:var(--hover-color-light);
+}
+ 
+
+
+
+header{
+    background: var(--bg-color);
+    height: 10rem;
+    width: 100%;
+}
+
+body{
+    font-family: Poppins;
+    /* gap: 1rem; */
+    display: flex;
+}
+
+/* caixas */
+
+.texto{
+    width: 58%;
+    display: flex;
+    padding: 2.5rem 0rem 2rem 4.5rem;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.container2{
+   height: 100%;
+   width: 100%;
+    border-radius: 1rem;
+    /* display:flex; */
+}
+
+principal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .box1{
     display: flex;
-    background: rgb(241, 239, 240);
-    width: calc(100vw - 190px - 10px - 10px - 10px);
-    gap: 10px;
-    align-items: center;
-    justify-content: space-around;
+    /* background: rgb(241, 239, 240); */
+    height: 28rem;
+    /* gap: 1rem; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
     background: var(--bg-color);
+    /* padding: 1rem; */
 }
 
-
 .caixa1{
-    height: 26vh;
-    width: 66vw;
+    height: 100%;
+    width: 60rem;
     background: linear-gradient(90deg, var(--div1-color) 01%, var(--div11-color) 100%);
-    border-radius: 10px;
+    border-radius: 1rem;
+    /* display: flex; */
+    flex-wrap:wrap;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+.caixa1, .texto1{
+    font-size: 1.2rem;
+}
+
+.caixa1, .valor{
+    font-size: 4.2rem;
+}
+
+.btn-caixa1 i{
+    font-size: 2rem;
 }
 
 .quatrocaixas{
+    width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 2rem;
+    gap: 2.5rem;
 }
 
-.caixa2{
+.duascaixas, .duascaixas2{
+    height: 20rem;
+    width: 100%;
     display: flex;
-    height: 12vh;
-    width: 23vw;
-    background: var(--div2-color);
-    border-radius: 10px;
+    gap: 3rem;
+}
+
+.caixa2, .caixa3, .caixa4, .caixa5{
+    width: 50%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    /* gap: 3rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa2{  
+    background: var(--div2-color);  
 }
 
 .caixa3{
-    height: 12vh;
-    width: 23vw;
-    background: var(--div3-color);
-    border-radius: 10px;
+    background: var(--div3-color); 
 }
 
 .caixa4{
-    height: 12vh;
-    width: 23vw;
-    background: var(--div4-color);
-    border-radius: 10px;
+    background: var(--div4-color); 
 }
 
 .caixa5{
-    height: 12vh;
-    width: 23vw;
     background: var(--div5-color);
-    border-radius: 10px;
+}
+
+.icone{
+    border: 2px solid var(--light-color);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iconecaixa{
+    font-size: 3rem;
+}
+.numero{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    flex-direction: column;
 }
 
 
-.meio{
+/* .meio{
     background: var(--search-color);
     height: 5vh;
     display: flex;
-    gap: 10px;
-    width: calc(100vw - 190px - 10px - 10px - 10px);
-    border-radius: 10px;
-}
+    gap: 1rem;
+    width: calc(100vw - 190px - 1rem - 1rem - 1rem);
+    border-radius: 1.3rem;
+} */
 
 .meio1{
-    width: calc(80vw - 210px);
+    height: 2rem;
+    width: 40rem;
 }
 
 .meio2{
-    width: calc(45vw - 210px);
+    height: 2rem;
+    width: 20rem;
 }
 
 .box2{
+    background: var(--search-color);
     display: flex;
-    height: 55vh;
-    gap: 10px;
-    width: calc(100vw - 190px - 10px - 10px - 10px);
+    height: 20rem;
+    gap: 1rem;
+    width: 100%; 
 }
 
 .table1{
-    width: calc(80vw - 210px);
+    height: 100%;
+    width: 40rem;
 }
 
 .table2{
-    width: calc(45vw - 210px);
+    height: 100%;
+    width: 20rem;
+}
+
+
+.btnmeio{
+    border: 1px solid black;
+    height: 1rem;
 }

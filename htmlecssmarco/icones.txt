@@ -1,0 +1,6 @@
+home: <i class="ri-home-line"></i>
+email: <i class="ri-mail-line"></i>
+contados: <i class="ri-contacts-line"></i>
+moeda: <i class="ri-moeda-line"></i>
+documento: <i class="ri-file-line"></i>
+dashboard: <i class="ri-dashboard-line"></i>
