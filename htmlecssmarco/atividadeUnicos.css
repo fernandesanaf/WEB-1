@@ -21,9 +21,11 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
     list-style: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -70,6 +72,16 @@ h3:hover{
     height: 100%;
     display: flex;
     box-sizing: border-box;
+    
+}
+
+.container2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    padding-left: 4rem;
 }
 
 nav{
@@ -77,24 +89,25 @@ nav{
     width:17rem; 
     height: 100%;
     /* display: flex; */
-    /* border: 1px solid black; */
+     border: 1px solid black; 
 }
 
 .logo{
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
     padding-bottom: 1rem;
 }
 img{
-    width: 12rem;
-    padding-top: 2rem;
+    width: 16rem;
+    /* padding-top: 2rem; */
 }
 .menu{
     display: flex;
     width: 17rem;
     gap: 1rem;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 3rem 3rem 3rem 5rem;
 }
 
 nav .menu .limenu{
@@ -133,7 +146,7 @@ nav .menu .limenu .amenu .imenu:rover{
 
 header{
     background: var(--bg-color);
-    height: 10rem;
+    height: 9rem;
     width: 100%;
 }
 
@@ -146,18 +159,11 @@ body{
 /* caixas */
 
 .texto{
-    width: 58%;
+    /* width: 58%; */
     display: flex;
     padding: 2.5rem 0rem 2rem 4.5rem;
     flex-direction: column;
     gap: 1.2rem;
-}
-
-.container2{
-   height: 100%;
-   width: 100%;
-    border-radius: 1rem;
-    /* display:flex; */
 }
 
 principal{
@@ -171,16 +177,16 @@ principal{
     display: flex;
     /* background: rgb(241, 239, 240); */
     height: 28rem;
-    /* gap: 1rem; */
+     /* gap: 1rem; */
     /* align-items: center; */
     /* justify-content: space-around; */
     background: var(--bg-color);
-    /* padding: 1rem; */
+     padding: 0.5rem 3.5rem 0.5rem 1rem;
 }
 
 .caixa1{
     height: 100%;
-    width: 60rem;
+    width: 58rem;
     background: linear-gradient(90deg, var(--div1-color) 01%, var(--div11-color) 100%);
     border-radius: 1rem;
     /* display: flex; */
@@ -197,15 +203,27 @@ principal{
     font-size: 4.2rem;
 }
 
+.btn-caixa1{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 12rem;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
 .btn-caixa1 i{
     font-size: 2rem;
 }
 
 .quatrocaixas{
-    width: 50%;
+    height: 100%;
+    width: 50rem;
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
     gap: 2.5rem;
 }
 
@@ -245,7 +263,7 @@ principal{
 .icone{
     border: 2px solid var(--light-color);
     border-radius: 1.5rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 3.5rem;
     height: 3.5rem;
     display: flex;
@@ -274,7 +292,7 @@ iconecaixa{
     width: calc(100vw - 190px - 1rem - 1rem - 1rem);
     border-radius: 1.3rem;
 } */
-
+/* 
 .meio1{
     height: 2rem;
     width: 40rem;
@@ -307,4 +325,4 @@ iconecaixa{
 .btnmeio{
     border: 1px solid black;
     height: 1rem;
-}
+} */
