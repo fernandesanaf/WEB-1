@@ -18,6 +18,19 @@
     --hover-color: #64C17A;
     --hover-color-light: #d6f6de;
     --border-hover:#26c96e;
+
+    --btn-caixa1: #F6BE69;
+    --white-color: #FFFFFF;
+    --light-color: #FDFCFF;
+
+    --btn-canceled:#fc403f;
+    --btn-completed:#06a38c;
+    --btn-pending:#ffbc51;
+    --btn-paid:#a2f0e4;
+    --btn-unpaid:#f8b5bb;
+
+    --btn-paid-letter: #3fbfaa;
+    --btn-unpaid-letter:#ff6a71;
 }
 
 *{
@@ -29,9 +42,9 @@
     text-decoration: none;
 }
 
-div{
+/* div{
     border: 1px solid black;
-}
+} */
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -54,7 +67,7 @@ h2{
 }
 
 h3{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--txt-color);
 }
 
@@ -72,7 +85,6 @@ h3:hover{
     height: 100%;
     display: flex;
     box-sizing: border-box;
-    
 }
 
 .container2{
@@ -81,33 +93,33 @@ h3:hover{
     display: flex;
     flex-direction: column;
     background: var(--bg-color);
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 
 nav{
     background: var(--nav-color);
-    width:17rem; 
+    width:20rem; 
     height: 100%;
     /* display: flex; */
-     border: 1px solid black; 
+     /* border: 1px solid black;  */
 }
 
 .logo{
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 }
 img{
-    width: 16rem;
+    width: 15rem;
     /* padding-top: 2rem; */
 }
 .menu{
     display: flex;
     width: 17rem;
-    gap: 1rem;
+    gap: 0.3rem;
     flex-direction: column;
-    padding: 3rem 3rem 3rem 5rem;
+    padding: 0.5rem 2rem 2rem 3rem;
 }
 
 nav .menu .limenu{
@@ -134,6 +146,9 @@ nav .menu .limenu:hover{
 }
 
 .limenu:hover{
+    background:var(--light-color);
+    cursor: pointer;
+    transition: 0.5s;
     border-left: 0.5rem solid var(--border-hover);
 }
 
@@ -141,12 +156,18 @@ nav .menu .limenu .amenu .imenu:rover{
     background:var(--hover-color-light);
 }
  
+.limenu:hover h3{
+    color:var(--hover-color);
+}
 
+.limenu:hover i{
+    color:var(--hover-color);
+}
 
 
 header{
     background: var(--bg-color);
-    height: 9rem;
+    height: 14rem;
     width: 100%;
 }
 
@@ -159,11 +180,15 @@ body{
 /* caixas */
 
 .texto{
-    /* width: 58%; */
+    height: 100%;
     display: flex;
-    padding: 2.5rem 0rem 2rem 4.5rem;
+    padding: 2.5rem 0rem 3rem 3.5rem;
     flex-direction: column;
     gap: 1.2rem;
+}
+
+.texto1{
+    padding-bottom: 0.2rem;
 }
 
 principal{
@@ -171,23 +196,26 @@ principal{
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .box1{
     display: flex;
     /* background: rgb(241, 239, 240); */
-    height: 28rem;
+    height: 25rem;
      /* gap: 1rem; */
     /* align-items: center; */
     /* justify-content: space-around; */
     background: var(--bg-color);
-     padding: 0.5rem 3.5rem 0.5rem 1rem;
+    padding: 0.5rem 0.0rem 1.5rem 0rem;
+    
 }
 
 .caixa1{
     height: 100%;
-    width: 58rem;
+    width: 55%;
     background: linear-gradient(90deg, var(--div1-color) 01%, var(--div11-color) 100%);
+    color: var(--light-color);
     border-radius: 1rem;
     /* display: flex; */
     flex-wrap:wrap;
@@ -206,12 +234,13 @@ principal{
 .btn-caixa1{
     display: flex;
     align-items: center;
-    height: 100%;
-    width: 12rem;
+    height: 5rem;
+    width: 13rem;
     justify-content: space-around;
     padding: 1rem;
     border-radius: 1rem;
-
+    background: var(--btn-caixa1);
+    color: var(--light-color);
 }
 
 .btn-caixa1 i{
@@ -220,11 +249,12 @@ principal{
 
 .quatrocaixas{
     height: 100%;
-    width: 50rem;
+    width: 55%;
     display: flex;
     flex-direction: column;
     padding: 1rem 1rem 1rem 1rem;
     gap: 2.5rem;
+    
 }
 
 .duascaixas, .duascaixas2{
@@ -232,10 +262,12 @@ principal{
     width: 100%;
     display: flex;
     gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .caixa2, .caixa3, .caixa4, .caixa5{
-    width: 50%;
+    width: 65%;
     height: 100%;
     border-radius: 1rem;
     display: flex;
@@ -262,17 +294,19 @@ principal{
 
 .icone{
     border: 2px solid var(--light-color);
-    border-radius: 1.5rem;
-    /* padding: 1rem; */
-    width: 3.5rem;
-    height: 3.5rem;
+    color:var(--light-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 iconecaixa{
-    font-size: 3rem;
+    font-size: 9rem;
 }
 .numero{
     font-size: 3.5rem;
@@ -281,48 +315,173 @@ iconecaixa{
 .content{
     display: flex;
     flex-direction: column;
+    color: var(--light-color);
+    padding-left: 4rem;
 }
 
-
-/* .meio{
-    background: var(--search-color);
-    height: 5vh;
+/* box 2 */
+.box2{
+    /* background: var(--search-color); */
     display: flex;
+    height: 100%;
     gap: 1rem;
-    width: calc(100vw - 190px - 1rem - 1rem - 1rem);
-    border-radius: 1.3rem;
-} */
-/* 
+    width: 100%; 
+    
+}
+
 .meio1{
-    height: 2rem;
-    width: 40rem;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 4.5rem; */
+    height: 6rem;
+    align-items: center;
+}
+
+.texto-tabelas{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.btn-recent{
+    display: flex;
+    background: var(--white-color);
+    border-radius: 1rem;
+    border: none;
+    color: var(--text-color);
+    height: 4.5rem;
+    width: 10rem;
+    font-size: 1.3rem;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.icone-recent{
+    font-size: 2.2rem;
+    color: var(--border-hover);
+    font-weight: 200;
 }
 
 .meio2{
-    height: 2rem;
-    width: 20rem;
-}
-
-.box2{
-    background: var(--search-color);
     display: flex;
-    height: 20rem;
-    gap: 1rem;
-    width: 100%; 
+    align-items: center;
+    background: var(--bg-color);
+    height: 6rem;
 }
 
 .table1{
     height: 100%;
-    width: 40rem;
+    width: 70%;
+    color: var(--txt-color);
 }
 
 .table2{
     height: 100%;
-    width: 20rem;
+    width: 50%;
+    color: var(--txt-color);
+} 
+
+table{
+    background: var(--white-color);
+    align-items: center;
+    text-align: center;
+    border-radius: 1.3rem;
 }
 
+.tabela1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* gap: 3rem; */
+}
 
-.btnmeio{
-    border: 1px solid black;
-    height: 1rem;
+.tabela2{
+    font-size: 1.6rem;
+    font-weight: 500;
+    /* gap: 1rem; */
+}
+
+tr:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    border-left: 0.5rem solid var(--border-hover);
+    box-shadow: 2px 4px 4px rgb(174, 173, 173);
+}
+
+td{
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+}
+
+tr{
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: all .5s;
+    border: 0.2rem solid transparent;
+}
+
+.checkbox{
+    padding-right: 1rem;
+    padding-left: 4rem;
+    
+}
+
+/* .checkbox:hover{
+    border-left: 0.5rem solid black; 
 } */
+
+th{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.id, .date,  .email{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.recipient, .amount{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.button-table-paid, .button-table-unpaid, .button-table-pending, .button-table-completed, .button-table-canceled{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.button-table-paid{
+    width: 6rem;
+    background: var(--btn-paid);
+    color: var(--btn-paid-letter);
+}
+
+.button-table-unpaid{
+    width: 7rem;
+    background: var(--btn-unpaid);
+    color: var(--btn-unpaid-letter);
+}
+
+.button-table-canceled{
+    width: 7.5rem;
+    background: var(--btn-canceled);
+    color: var(--light-color);
+}
+
+.button-table-completed{
+    width: 9.5rem;
+    background: var(--btn-completed);
+    color: var(--light-color);
+}
+
+.button-table-pending{
+    width: 7.5rem;
+    background: var(--btn-pending);
+    color: var(--light-color);
+}

@@ -110,8 +110,8 @@
           </li>
         </ul>
       </nav>
-
-      <div class="container2">
+    </div>
+    <div class="container2">
         <header></header>
         <div class="principal">
           <div class="box1">
@@ -130,7 +130,7 @@
               <div class="duascaixas">
                 <div class="caixa2">
                   <div class="icone">
-                    <i class="ri-send-plane-line iconecaixa"></i>
+                    <i class="ri-bookmark-line iconecaixa"></i>
                   </div>
                   <div class="content">
                     <p class="titulo">Total Invoice</p>
@@ -142,28 +142,28 @@
                     <i class="ri-send-plane-line iconecaixa"></i>
                   </div>
                   <div class="content">
-                    <p class="titulo">Total Invoice</p>
-                    <p class="numero">135</p>
+                    <p class="titulo">Invoice Sent</p>
+                    <p class="numero">357</p>
                   </div>
                 </div>
               </div>
               <div class="duascaixas2">
                 <div class="caixa4">
                   <div class="icone">
-                    <i class="ri-send-plane-line iconecaixa"></i>
+                    <i class="ri-award-line iconecaixa"></i>
                   </div>
                   <div class="content">
-                    <p class="titulo">Total Invoice</p>
-                    <p class="numero">135</p>
+                    <p class="titulo">Paid Invoice</p>
+                    <p class="numero">246</p>
                   </div>
                 </div>
                 <div class="caixa5">
                   <div class="icone">
-                    <i class="ri-send-plane-line iconecaixa"></i>
+                    <i class="ri-close-circle-line iconecaixa"></i>
                   </div>
                   <div class="content">
-                    <p class="titulo">Total Invoice</p>
-                    <p class="numero">135</p>
+                    <p class="titulo">Unpaid Invoice</p>
+                    <p class="numero">468</p>
                   </div>
                 </div>
               </div>
@@ -171,24 +171,211 @@
           </div>
           <div class="box2">
             <div class="table1">
-              <div class="meio1">
-                <p>meio</p>
-                <button class="btnmeio">
-                  <h4>botão</h4>
-                </button>
-              </div>
+                <div class="meio1">
+                  <p class="texto-tabelas">Latest Invoice</p>
+                    <button class="btn-recent">
+                      <p>Recent</p>
+                      <i class="ri-arrow-down-s-line icone-recent"></i>
+                    </button>
+                </div>
+              <div class="tabela1">
+                <table border="black">
+                  <thead>
+                      <tr>
+                        <th class="checkbox">
+                          <input type="checkbox">
+                        </th>
+                        <th>ID Invoice</th>
+                        <th>Recipient</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                      </tr>
+                  </thead>
+                      <tr>
+                        <td class="checkbox">
+                          <input type="checkbox">
+                        </td>
+                        <td class="id">INV-001-123</td>
+                        <td class="recipient">John Snow</td>
+                        <td class="date">March 21, 2021</td>
+                        <td class="amount">$352</td>
+                        <td class="email">john@mail.com</td>
+                        <td>
+                          <button class="button-table-paid">
+                            <p>Paid</p>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="checkbox">
+                          <input type="checkbox">
+                        </td>
+                        <td class="id">INV-001-124</td>
+                        <td class="recipient">Rafif Adma</td>
+                        <td class="date">March 23, 2021</td>
+                        <td class="amount">$456</td>
+                        <td class="email">raft@mail.com</td>
+                        <td>
+                          <button class="button-table-paid">
+                            <p>Paid</p>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="checkbox">
+                          <input type="checkbox">
+                        </td>
+                        <td class="id">INV-001-125</td>
+                        <td class="recipient">Andrean</td>
+                        <td class="date">March 26, 2021</td>
+                        <td class="amount">$546</td>
+                        <td class="email">andre@mail.com</td>
+                        <td>
+                          <button class="button-table-paid">
+                            <p>Paid</p>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="checkbox">
+                          <input type="checkbox">
+                        </td>
+                        <td class="id">INV-001-126</td>
+                        <td class="recipient">Adityawan</td>
+                        <td class="date">March 27, 2021</td>
+                        <td class="amount">$535</td>
+                        <td class="email">adit@mail.com</td>
+                        <td>
+                          <button class="button-table-paid" >
+                            <p>Paid</p>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="checkbox">
+                          <input type="checkbox" >
+                        </td>
+                        <td class="id">INV-001-127</td>
+                        <td class="recipient">M. Hafidh</td>
+                        <td class="date">March 29, 2021</td>
+                        <td class="amount">$874</td>
+                        <td class="email">hafid@mail.com</td>
+                        <td>
+                          <button class="button-table-unpaid">
+                            <p>Unpaid</p>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="checkbox">
+                          <input type="checkbox" >
+                        </td>
+                        <td class="id">INV-001-128</td>
+                        <td class="recipient">Jonathan</td>
+                        <td class="date">April 01st, 2021</td>
+                        <td class="amount">$654</td>
+                        <td class="email">jonathan@mail.com</td>
+                        <td>
+                          <button class="button-table-unpaid">
+                            <p>Unpaid</p>
+                          </button>
+                        </td>
+                      </tr>
+                </table>
             </div>
-            <table class="tabela1">
-              <p>tabela</p>
-            </table>
           </div>
+          
           <div class="table2">
-            <div class="meio2">
-              <p>meio2</p>
+              <div class="meio2">
+                <p class="texto-tabelas">Transfer History</p>
+              </div>
+            <div class="tabela2">
+              <table border="black">
+                <thead>
+                    <tr>
+                        <th class="checkbox">
+                            <input type="checkbox">
+                        </th> 
+                        <th>Transfer Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                    </td>
+                    <td class="recipient">Youzup Premium</td>
+                    <td class="date">April 12, 2021</td>
+                    <td class="amount">$245</td>
+                    <td>
+                        <button class="button-table-canceled">
+                            <p>Canceled</p>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                    </td>
+                    <td class="recipient"> Dosne TV</td>
+                    <td class="date">April 14, 2021</td>
+                    <td class="date">$143</td>
+                    <td>
+                        <button class="button-table-completed">
+                            <p>Completed</p>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox" >
+                    </td>
+                    <td class="recipient">Samantha Liouw</td>
+                    <td class="date">April 16, 2021</td>
+                    <td class="amount">$54</td>
+                    <td>
+                        <button class="button-table-pending">
+                            <p>Pending</p>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="checkbox">
+                        <input type="checkbox">
+                    </td>
+                    <td class="recipient">Spotitoz</td>
+                    <td class="date">April 18, 2021</td>
+                    <td class="amount">$323</td>
+                    <td>
+                        <button class="button-table-completed">
+                            <p>Completed</p>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox" >
+                    </td>
+                    <td class="recipient">Anime TV</td>
+                    <td class="date">April 25, 2021</td>
+                    <td class="amount">$23</td>
+                    <td>
+                        <button class="button-table-canceled">
+                            <p>Canceled</p>
+                        </button>
+                    </td>
+                </tr>
+              </table>
             </div>
-            <table class="tabela2">
-              <p>tabela</p>
-            </table>
           </div>
         </div>
       </div>
