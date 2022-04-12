@@ -202,7 +202,7 @@ principal{
 .box1{
     display: flex;
     /* background: rgb(241, 239, 240); */
-    height: 25rem;
+    height: 30rem;
      /* gap: 1rem; */
     /* align-items: center; */
     /* justify-content: space-around; */
@@ -213,7 +213,7 @@ principal{
 
 .caixa1{
     height: 100%;
-    width: 55%;
+    width: 65%;
     background: linear-gradient(90deg, var(--div1-color) 01%, var(--div11-color) 100%);
     color: var(--light-color);
     border-radius: 1rem;
@@ -380,21 +380,23 @@ iconecaixa{
     color: var(--txt-color);
 } 
 
-table{
+.box2 table{
     background: var(--white-color);
     align-items: center;
     text-align: center;
     border-radius: 1.3rem;
+    border-spacing: 0;
 }
 
 .tabela1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
+    
     /* gap: 3rem; */
 }
 
 .tabela2{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     /* gap: 1rem; */
 }
@@ -402,22 +404,22 @@ table{
 tr:hover{
     cursor: pointer;
     transition: 0.2s;
-    border-left: 0.5rem solid var(--border-hover);
+    border-left: 1.5rem solid var(--border-hover);
     box-shadow: 2px 4px 4px rgb(174, 173, 173);
 }
 
-td{
-    align-items: center;
-    padding-bottom: 1rem;
-    padding-right: 1.5rem;
-    padding-top: 1rem;
-}
-
 tr{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: 400;
     transition: all .5s;
     border: 0.2rem solid transparent;
+    /* border-spacing: none; */
+    
+}
+
+table tr td, th{
+    padding: 1.1rem;
+    border-bottom: 1px solid var(--bg-color);
 }
 
 .checkbox{
@@ -426,24 +428,20 @@ tr{
     
 }
 
-/* .checkbox:hover{
-    border-left: 0.5rem solid black; 
-} */
-
 th{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    /* padding-bottom: 2rem;
+    padding-top: 2rem; */
 }
 
 .id, .date,  .email{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-weight: 400;
 }
 
 .recipient, .amount{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-weight: 800;
 }
 
