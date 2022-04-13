@@ -75,9 +75,15 @@ h4{
     font-size: 0.8rem;
     font-weight:600;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 /* nav */
-h3:hover{
+.limenu h3:hover{
     color: var(--hover-color);
 }
 
@@ -87,29 +93,17 @@ h3:hover{
     box-sizing: border-box;
 }
 
-.container2{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-color);
-    padding-left: 2rem;
-}
+
 
 nav{
     background: var(--nav-color);
-    width:20rem; 
+    width:25rem; 
     height: 100%;
     /* display: flex; */
      /* border: 1px solid black;  */
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+
 img{
     width: 15rem;
     /* padding-top: 2rem; */
@@ -119,7 +113,7 @@ img{
     width: 17rem;
     gap: 0.3rem;
     flex-direction: column;
-    padding: 0.5rem 2rem 2rem 3rem;
+    padding: 0.5rem 2rem 2rem 4rem;
 }
 
 nav .menu .limenu{
@@ -178,6 +172,14 @@ body{
 }
 
 /* caixas */
+.container2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    padding-left: 2rem;
+}
 
 .texto{
     height: 100%;
@@ -190,6 +192,8 @@ body{
 .texto1{
     padding-bottom: 0.2rem;
 }
+
+
 
 principal{
     height: 100%;
@@ -370,13 +374,13 @@ iconecaixa{
 
 .table1{
     height: 100%;
-    width: 70%;
+    width: 100%;
     color: var(--txt-color);
 }
 
 .table2{
     height: 100%;
-    width: 50%;
+    width: 100%;
     color: var(--txt-color);
 } 
 
@@ -482,4 +486,76 @@ th{
     width: 7.5rem;
     background: var(--btn-pending);
     color: var(--light-color);
+}
+
+/*header*/
+
+.header1{
+    display:flex;
+    height: 100%;
+    width: 100%;
+}
+
+.txtInvoicing h1{
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--txt-color);
+    padding-top: 2rem;
+}
+
+.txtInvoicing h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.pesquisa{
+    background-color:var(--search-color);
+    border:solid 1px;
+    border-radius:15px;
+    width:35em;
+    height:3rem;
+    align-items:center;
+    margin: 4rem;
+}
+
+.search{
+    background-color:transparent;
+    font-size:18px;
+    border:none;
+    /* width: 100%;
+    height: 100%; */
+}
+.tresIcones{
+    display: flex;
+    /* margin-top: 3rem; */
+    margin: 3rem;
+}
+.iconeheader{
+    border: 1px solid var(--text-color);
+    color:var(--text-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.dados{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.iconedados{
+    color:var(--text-color);
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.dados1{
+    margin-left: 2rem;
 }
