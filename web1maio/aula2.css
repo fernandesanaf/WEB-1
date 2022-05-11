@@ -1,0 +1,45 @@
+.conteiner{
+    display: grid;
+    background: #333;
+    border: 1px solid red;
+    gap: 5px;
+    grid-template-areas: 
+    'header header header header'
+    'aside article article article'
+    
+    'footer footer footer footer'  ;
+}
+
+#header{
+    grid-area: header;
+}
+
+#aside{
+    grid-area: aside;
+    height: 500px;
+}
+
+#article{
+    grid-area: article;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 500px;
+}
+
+#image{
+    grid-area: image;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+.conteiner div{
+    background: #ccc;
+    /* height: 60px; */
+    border: 1px solid blue;
+}

@@ -1,0 +1,21 @@
+.conteiner{
+    display: grid;
+    background: #333;
+    border: 1px solid red;
+    padding: 15px;
+    /* grid-template-columns:100px 150px 100px;*//* exatamente a quantidade de divs */
+    grid-template-rows: 1fr 5fr 1fr;
+    gap: 10px;
+}
+
+.conteiner div{
+    background: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+.item2 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+}
