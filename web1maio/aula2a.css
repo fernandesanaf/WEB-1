@@ -1,0 +1,44 @@
+.main{
+    display: grid;
+    background: #333;
+    border: 1px solid red;
+    gap: 5px;
+    
+}
+
+
+.conteiner{
+    grid-area: conteiner;
+}
+
+.header{
+    grid-area: header;
+}
+
+#content{
+    grid-area: content;
+}
+
+#news{
+    grid-area: news;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#subscribe{
+    grid-area: subscribe;
+}
+#popular{
+    grid-area: popular;
+}
+#contributors{
+    grid-area: contributors;
+}
+
+.main div{
+    background: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
