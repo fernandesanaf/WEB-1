@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function soma(x, y) {
+        return x + y;
+      }
+
+      var result = soma(2, 3);
+
+      console.log(result);
+
+      function quadrado(x) {
+        return math.pow(x, 2);
+      }
+
+      //metodos
+      //quando uma função esta dentro de um objeto é considerada um metodo
+
+      var conta = {
+        saldo: 0,
+        deposita: function (x) {
+          this.saldo += x;
+        },
+      };
+
+      conta.deposita(100);
+      console.log(conta.saldo);
+
+      //acesso direto ao objeto deve ser evitado
+      conta.saldo = 150; //acesso direto
+      console.log(conta.saldo);
+
+      var soma = function () {
+        var soma = 0;
+        for (var i = 0; i < arguments.length; i++) {
+          soma += arguments[i];
+
+          //arguments recupera todos os argumentos dentro do objeto
+        }
+
+        return soma;
+      };
+
+      var result2 = soma(2, 4, 6, 7, 5);
+
+      console.log(result2);
+
+      
+    </script>
+  </body>
+</html>

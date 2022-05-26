@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="metodos.js"></script>
+    <style>
+      body {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- vamos falar sobre o dom 
+        //ir atrás das functions em arrays 
+        //arvoredom(document object model) 
+        
+        windows
+        /|\
+
+    -->
+
+    <div class="meuDiv">
+      <h1 id="titulo">meu dom</h1>
+      <h3>testando acesso ao dom</h3>
+      <p>eu vou mudar</p>
+      <h4>clique aqui!</h4>
+    </div>
+
+    <div class="meuDiv">
+      <h1>meu dom2</h1>
+      <h3>nas ferias vou tentar aprender</h3>
+      <h4>clique aqui tambem!</h4>
+    </div>
+    <script>
+      var elemento = window.document.getElementById("titulo");
+      var elementos2 = document.getElementsByClassName("meuDiv");
+      // funções pluralizadas retornam arrays
+      var elementos3 = document.getElementsByTagName("p");
+
+      //querySelector ou querySelector all
+
+      elemento.style.color = "red";
+      elemento.style.fontSize = "10px";
+      elementos3[0].innerHTML = "mudei";
+      //innerHTML mantem o estilo e innerText muda tudo
+      elemento.innerText = "meu novo titulo";
+
+      elementos2[0].style.background = "green";
+      elementos2[1].style.background = "red";
+      elementos2[1].remove(); //remove elemento
+
+      //               / aqui ele coloca direto no domento
+      var novo = document.createElement("h1"); //cria um elemento
+      novo.innerHTML = "meu segundo titulo";
+
+      elementos2[0].appendChild(novo);
+    </script>
+  </body>
+</html>
