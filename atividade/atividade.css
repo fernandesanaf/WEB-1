@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.ex1,
+.ex2,
+.ex3 {
+    width: 30%;
+    padding-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 65%;
+}
+
+input,
+select {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #786f78;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+#btn,
+#random,
+#verMaior {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #2d6cea;
+    box-shadow: 1px 1px 2px #314b83;
+}
+
+#btn:hover,
+#random:hover,
+#verMaior:hover {
+    cursor: pointer;
+}
+
+#btn {
+    margin-top: 2rem;
+}
+
+#verMaior {
+    margin-bottom: 2rem;
+}
+
+table {
+    background-color: white;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+td {
+    border: 1px solid #e8a6db;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.danger {
+    border: 1px solid red;
+}
+
+.success {
+    border: 1px solid green;
+}
+
+.dangerText {
+    color: red;
+}
+
+.successText {
+    color: green;
+}

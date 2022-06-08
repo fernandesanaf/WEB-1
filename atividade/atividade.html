@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="portuguese-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="atividade.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="./atividade.js"></script>
+        <!-- 1- criar 3 caixas de texto do tipo numero e apresentar o maior valor em uma outra caixa de texto -->
+        <div class="exercicio1">
+            <div class="inputs">
+                <h1>Exercício 1</h1>
+                <h2>digite 3 números inteiros:</h2>
+                <input
+                    id="num1"
+                    type="number"
+                    placeholder=" digite o 1º número"
+                />
+                <input
+                    id="num2"
+                    type="number"
+                    placeholder=" digite o 2º número"
+                />
+                <input
+                    id="num3"
+                    type="number"
+                    placeholder=" digite o 3º número"
+                />
+                <button onclick="vermaior()" id="verMaior">
+                    <p>Verificar qual número é maior</p>
+                </button>
+                <h2>O maior dos 3 números é:</h2>
+                <input
+                    id="maior"
+                    type="number"
+                    placeholder="O maior número aqui"
+                />
+            </div>
+        </div>
+
+        <!-- 
+            2- validar um formulário com os seguintes campos:
+            - input text
+            - input option
+            - input checkbox 
+        -->
+        <div class="exercicio2">
+            <div class="inputs">
+                <h1>Exercício 2</h1>
+                <h2>Preencha o formulário abaixo:</h2>
+                <input id="rua" type="text" placeholder="Rua" />
+                <select name="opcoes" id="cidade">
+                    <option value="">Selecione uma cidade</option>
+                    <option value="tl">Três Lagoas</option>
+                    <option value="cas">Castilho</option>
+                    <option value="cg">Campo Grande</option>
+                </select>
+                <h3>concorda com os termos de uso?</h3>
+                <div class="check">
+                    <input id="option1" type="checkbox" />
+                    <label id="termos1" for="">termos</label>
+                </div>
+                <div class="check">
+                    <input id="option2" type="checkbox" />
+                    <label id="termos2" for="">termos2</label>
+                </div>
+                <button onclick="validacao()" id="btn">Enviar</button>
+            </div>
+        </div>
+
+        <!-- 
+            3- criar uma tabela de tamanho 3x3. criar um botão "gerar números". 
+            Na tabela aparecer os numeros gerados de forma randômica
+         -->
+        <div class="exercicio3">
+            <div class="inputs">
+                <h1>Exercício 3</h1>
+                <table>
+                    <tr>
+                        <td id="td1"></td>
+                        <td id="td2"></td>
+                        <td id="td3"></td>
+                    </tr>
+                    <tr>
+                        <td id="td4"></td>
+                        <td id="td5"></td>
+                        <td id="td6"></td>
+                    </tr>
+                    <tr>
+                        <td id="td7"></td>
+                        <td id="td8"></td>
+                        <td id="td9"></td>
+                    </tr>
+                </table>
+
+                <button onclick="aleatorios()" id="random">
+                    Gerar números aleatórios
+                </button>
+            </div>
+        </div>
+
+        
+    </body>
+</html>
