@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="atividade.css" />
+</head>
+<body>
+    <script src="./atividade.js"></script>
+    <div id="Menu" class="menu">
+    <a href="javascript:void(0)" class="closeIcon" onclick="closeMenu()">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMNJREFUSEvtlN0NgkAQhD86sBMsQTuQSrUDLUE7sQQziSQn7h8mF1/gDbLMtzs7dwOdn6GzPhsgdfjvFp2AG/B0Wt0BB+DijRJNIPEzcAeOBkTiV2APTB4kAkhA3Y8GpBV/vKcwp8x2YEHkxtx5KK7CDKCaJUTfZEsqXgUsIXovia8FzLboP2/xX2GqWtR6LhFr8WZSM4CVFgl56Vo1QRTFKMIfkMpB8xbaQn46aOqk61WR3pSVgmzJFY2wZgOkFna36AUMCDQZmJpqFgAAAABJRU5ErkJggg=="/>
+    </a>
+    <a href="#">titulo 1</a>
+    <a href="#">titulo 2</a>
+    <a href="#">titulo 3</a>
+    <a href="#">titulo 4</a>
+    <a href="#">titulo 5</a>
+    </div>
+
+    <div id="main">
+    <span  onclick="openMenu()">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/>
+    </span>
+    
+    </div>
+
+    <div class="exercicio3">
+        
+            <form name="">
+                    <label>estado:</label>
+                    <select name="select" id="select" onchange="selecionarCidade(this)">
+                        <option value="">Selecione um Estado</option>
+                    <option value="1| São Paulo">São Paulo</option>
+                    <option value="2| Tres Lagoas">Mato Grosso do Sul</option>
+                    <option value="3| Manaus">Amazonas</option>
+                    </select>
+                    <br><br>
+                    <label>cidade:</label>
+                    <input type="text" name="cidade" id="cidade">
+                </form>
+    </div>
+
+   
+   
+</body>
+</html>
